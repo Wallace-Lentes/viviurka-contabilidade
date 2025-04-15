@@ -1,0 +1,62 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 210 38% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 38% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 38% 15%;
+
+    --primary: 210 100% 45%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 160 100% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 92%;
+    --muted-foreground: 210 20% 45%;
+
+    --accent: 210 30% 95%;
+    --accent-foreground: 210 38% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 210 100% 45%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    @apply bg-gradient-to-tr from-fgts-700 via-fgts-600 to-fgts-500;
+  }
+  
+  .cta-button {
+    @apply bg-accent-green hover:bg-accent-green/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-20;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
