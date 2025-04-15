@@ -77,28 +77,28 @@ const Hero = () => {
     
     // Open WhatsApp with simulation information
     const message = `Olá, gostaria de simular o valor da antecipação do meu FGTS. Nome: ${formData.name}, CPF: ${formData.cpf}, Telefone: ${formData.phone}`;
-    const whatsappUrl = `https://wa.me/5541999631174?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5541991321173?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   return (
-    <section id="inicio" className="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg">
+    <section id="inicio" className="pt-24 pb-16 md:pt-[10rem] md:pb-24 gradient-bg">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-center">
-            <div className="bg-white/10 text-white inline-block px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="bg-white/10 text-black inline-block px-4 py-2 rounded-full text-sm font-medium mb-6">
               Processo 100% digital e seguro
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-6">
               Antecipação do seu FGTS de forma rápida e segura
             </h1>
-            <p className="text-white/90 text-lg md:text-xl mb-8">
+            <p className="text-black/90 text-lg md:text-xl mb-8">
               Tenha acesso ao seu dinheiro quando você precisar, sem burocracia e com as melhores taxas do mercado.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
               <Button 
-                className="cta-button text-base hover:bg-white/20 flex items-center justify-center gap-2" 
+                className="cta-button text-base hover:bg-fgts-50 flex items-center justify-center gap-2" 
                 size="lg"
                 onClick={handleSimulateClick}
               >
@@ -106,7 +106,7 @@ const Hero = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="bg-white/10 text-white border-white/30 hover:bg-white/20 text-base" 
+                className="bg-fgts-500 text-black border-white/30 hover:bg-fgts-50 text-base" 
                 size="lg"
                 onClick={scrollToHowItWorks}
               >

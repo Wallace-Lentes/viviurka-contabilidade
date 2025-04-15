@@ -54,16 +54,17 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				fgts: {
-					50: '#f3cce1 ',
+					
+					50: '#ee8954',
 					100: '#b3e0ff',
 					200: '#80caff',
 					300: '#4db3ff',
 					400: '#1a9dff',
-					500: '#C92B9C',
-					600: '#C92B9C',
+					500: '#F37D3F',
+					600: '#ffffff',
 					700: '#C92B9C',
 					800: '#C92B9C',
-					900: '#88288C',
+					900: '#043249',
 				},
 				accent: {
 					green: '#b12a86',
