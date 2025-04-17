@@ -1,28 +1,30 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
-import { MessageCircle } from "lucide-react";
+import { toast } from "sonner";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const openWhatsApp = () => {
-    const message =
-      "Olá, gostaria de mais informações sobre a antecipação de FGTS.";
+    const message = "Olá, gostaria de solicitar uma consulta.";
     window.open(
       `https://wa.me/5541999631174?text=${encodeURIComponent(message)}`,
       "_blank"
     );
   };
 
+  const copyPhoneNumber = (number: string) => {
+    navigator.clipboard.writeText(number);
+    toast.success("Número copiado com sucesso!", {
+      description: number,
+    });
+  };
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -37,7 +39,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <a href="#inicio"className="text-foreground hover:text-fgts-500 font-medium"
+          <a
+            href="#inicio"
+            className="text-foreground hover:text-fgts-500 font-medium"
           >
             <div className="flex items-center">
               <img src="/logo.jpeg" alt="Logo" className="w-28 h-auto" />
@@ -71,10 +75,15 @@ const Navbar = () => {
             >
               Contato
             </a>
-            <div className="flex items-center">
+            <button
+              onClick={() => copyPhoneNumber("+554130227449")}
+              className="flex items-center text-left cursor-pointer hover:underline"
+            >
               <Phone size={18} className="mr-2 text-fgts-500" />
-              <span className="font-semibold">+55 (41) 3022-7449</span>
-            </div>
+              <span className="font-semibold text-sm text-foreground">
+                +55 (41) 3022-7449
+              </span>
+            </button>
             <Button
               onClick={openWhatsApp}
               className="w-44 bg-fgts-500 hover:bg-fgts-50 text-white"
@@ -121,10 +130,15 @@ const Navbar = () => {
             >
               Contato
             </a>
-            <div className="flex items-center py-2">
+            <button
+              onClick={() => copyPhoneNumber("+5541999631174")}
+              className="flex items-center py-2 text-left cursor-pointer hover:underline"
+            >
               <Phone size={18} className="mr-2 text-fgts-500" />
-              <span className="font-semibold">+55 (41) 99963-1174</span>
-            </div>
+              <span className="font-semibold text-sm text-foreground">
+                +55 (41) 99963-1174
+              </span>
+            </button>
             <Button className="bg-fgts-500 hover:bg-fgts-500/10 w-full">
               Começar agora
             </Button>

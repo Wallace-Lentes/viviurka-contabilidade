@@ -109,8 +109,10 @@ const Hero = () => {
                 className="bg-fgts-600 text-orange-700 border-orange-700 hover:bg-fgts-50 text-base" 
                 size="lg"
                 onClick={scrollToHowItWorks}
-              >
+                > <a href="#perguntas-frequentes">
                 Saiba Mais
+
+              </a>
               </Button>
             </div>
             
