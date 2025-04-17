@@ -73,7 +73,7 @@ const Navbar = () => {
             </a>
             <div className="flex items-center">
               <Phone size={18} className="mr-2 text-fgts-500" />
-              <span className="font-semibold">+55 (41) 99963-1174</span>
+              <span className="font-semibold">+55 (41) 3022-7449</span>
             </div>
             <Button
               onClick={openWhatsApp}
