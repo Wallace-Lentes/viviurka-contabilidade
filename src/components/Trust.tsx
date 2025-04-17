@@ -2,7 +2,7 @@ import { ShieldCheck } from "lucide-react";
 
 const Trust = () => {
   return (
-    <section className="py-10 bg-white border-y border-gray-100">
+    <section className="py-10 bg-[#fffaf5] border-y border-gray-100">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12">
           <div className="flex items-center gap-3">

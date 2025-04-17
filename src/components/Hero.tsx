@@ -82,31 +82,31 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="pt-24 pb-16 md:pt-[10rem] md:pb-24 gradient-bg">
+    <section id="inicio" className="pt-24 pb-16 md:pt-[12rem] md:pb-24 bg-fgts-600">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-center">
-            <div className="bg-white/10 text-black inline-block px-4 py-2 rounded-full text-sm font-medium mb-6">
+            {/* <div className="bg-white/10 text-black inline-block px-4 py-2 rounded-full text-sm font-medium mb-6">
               Processo 100% digital e seguro
-            </div>
+            </div> */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-6">
-              Antecipação do seu FGTS de forma rápida e segura
+              Contabilidade Digital Especializada para seu negocio
             </h1>
             <p className="text-black/90 text-lg md:text-xl mb-8">
-              Tenha acesso ao seu dinheiro quando você precisar, sem burocracia e com as melhores taxas do mercado.
+              Simplificamos sua gestão contábil com soluções digitais completas. Conte com especialistas para cuidar das suas finanças enquanto você foca no crescimento do seu negócio.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
               <Button 
-                className="cta-button text-base hover:bg-fgts-50 flex items-center justify-center gap-2" 
+                className="bg-fgts-500 text-white text-base hover:bg-fgts-50 flex items-center justify-center gap-2" 
                 size="lg"
                 onClick={handleSimulateClick}
               >
-                Solicitar Agora <ArrowDown size={18} />
+                Solicitar proposta <ArrowDown size={18} />
               </Button>
               <Button 
                 variant="outline" 
-                className="bg-fgts-500 text-black border-white/30 hover:bg-fgts-50 text-base" 
+                className="bg-fgts-600 text-orange-700 border-orange-700 hover:bg-fgts-50 text-base" 
                 size="lg"
                 onClick={scrollToHowItWorks}
               >
@@ -116,21 +116,21 @@ const Hero = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 justify-center text-center">
               <div className="flex items-center gap-2 justify-center">
-                <CheckCircle className="text-accent-green" size={20} />
-                <span className="text-white">Aprovação em 30 minutos</span>
+                <CheckCircle className="text-accent-orange" size={20} />
+                <span className="text-black">Primeira Consulta Grátis</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="text-accent-green" size={20} />
-                <span className="text-white">Taxas a partir de 1,80%</span>
+                <CheckCircle className="text-accent-orange" size={20} />
+                <span className="text-black">100% Seguro</span>
               </div>
-              <div className="flex items-center gap-2 justify-center">
+              {/* <div className="flex items-center gap-2 justify-center">
                 <CheckCircle className="text-accent-green" size={20} />
                 <span className="text-white">Sem consulta ao SPC/Serasa</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="text-accent-green" size={20} />
                 <span className="text-white">Atendimento personalizado</span>
-              </div>
+              </div> */}
             </div>
           </div>
           

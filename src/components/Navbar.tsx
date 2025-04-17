@@ -54,7 +54,7 @@ const Navbar = () => {
               Sobre
             </a>
             <a
-              href="#como-funciona"
+              href="#servicos"
               className="text-foreground hover:text-fgts-500 font-medium"
             >
               Serviços

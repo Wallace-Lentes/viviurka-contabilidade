@@ -75,7 +75,7 @@ const Contact = () => {
     Telefone: ${formData.phone} 
     Mensagem: ${formData.message}`;
     
-    const whatsappUrl = `https://wa.me/5541999631174?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5541991321173?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     
     // Reset form
@@ -92,10 +92,10 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Entre em contato conosco
+            Entre em contato
           </h2>
           <p className="text-muted-foreground text-lg">
-            Estamos prontos para esclarecer suas dúvidas e ajudar com a antecipação do seu FGTS
+            Estamos prontos para ajudar seu negócio a crescer. Entre em contato conosco hoje mesmo.
           </p>
         </div>
 
@@ -174,7 +174,7 @@ const Contact = () => {
                   />
                   {errors.message && <p className="mt-1 text-sm text-red-500">{errors.message}</p>}
                 </div>
-                <Button type="submit" className="bg-fgts-500 hover:bg-fgts-600 w-full py-6 h-auto transform transition-transform duration-200 hover:scale-105">
+                <Button type="submit" className="bg-fgts-800 hover:bg-fgts-50 w-full py-6 h-auto transform transition-transform duration-200 hover:scale-105">
                   Enviar mensagem
                 </Button>
               </form>
@@ -189,14 +189,15 @@ const Contact = () => {
                   <Phone className="text-fgts-500 h-5 w-5 mt-1" />
                   <div>
                     <p className="font-medium">Telefone</p>
-                    <p className="text-muted-foreground">+55 (41) 99963-1174</p>
+                    <p className="text-muted-foreground">+55 (41) 999132-1173</p>
+                    <p className="text-muted-foreground">+55 (41) 3022-7449</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="text-fgts-500 h-5 w-5 mt-1" />
                   <div>
                     <p className="font-medium">E-mail</p>
-                    <p className="text-muted-foreground">mgapromotora2023@gmail.com</p>
+                    <p className="text-muted-foreground">contato@viviurkacontabil.com.br</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -204,7 +205,7 @@ const Contact = () => {
                   <div>
                     <p className="font-medium">Endereço</p>
                     <p className="text-muted-foreground">
-                    Rua Walter Rodolfo Behling, 147 - Guabirotuba<br />
+                    Rua Mamoré 875, sobrado 1 - Merçes<br />
                      Curitiba - PR, 81510-570
                     </p>
                   </div>
@@ -214,15 +215,15 @@ const Contact = () => {
                   <div>
                     <p className="font-medium">Horário de atendimento</p>
                     <p className="text-muted-foreground">
-                      Segunda a sexta: 9h às 18h<br />
-                      Sábado: 9h às 13h
+                      Segunda a sexta: 8h às 18h<br />
+                      
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <Card className="bg-fgts-50 border-fgts-200">
+            {/* <Card className="bg-fgts-50 border-fgts-200">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-lg mb-2">Canal de atendimento prioritário</h4>
                 <p className="text-sm text-gray-600 mb-4">
@@ -238,7 +239,7 @@ const Contact = () => {
                   Falar pelo WhatsApp
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>
