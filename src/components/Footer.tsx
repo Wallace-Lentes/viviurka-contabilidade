@@ -32,7 +32,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Página inicial
+                  Inicio
                 </a>
               </li>
               <li>
@@ -45,10 +45,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#como-funciona"
+                  href="#srvicos"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Como funciona
+                  Serviços
                 </a>
               </li>
               <li>
